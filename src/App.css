@@ -170,10 +170,11 @@ main {
 }
 
 .about-container > img {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
   mix-blend-mode: luminosity;
-  opacity: 100%;
+  opacity: 50%;
 }
 .about-container > p {
   z-index: 5;
