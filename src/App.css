@@ -153,7 +153,7 @@ main {
   font-family: "Lato", sans-serif;
   z-index: 5;
   grid-area: title;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 100;
   letter-spacing: 1.3rem;
   margin: auto;
@@ -173,13 +173,14 @@ main {
   width: 10rem;
   height: 10rem;
   object-fit: cover;
-  mix-blend-mode: luminosity;
-  opacity: 50%;
+  mix-blend-mode: screen;
+  opacity: 100%;
 }
 .about-container > p {
+  font-size: 0.8rem;
   z-index: 5;
   width: 50%;
-  line-height: 1.8rem;
+  line-height: 1.7rem;
   font-weight: 300;
 }
 
@@ -214,6 +215,7 @@ main {
   padding: 0 3vw;
   height: 100vh;
   overflow: scroll;
+  width: 30vw;
 }
 
 .project {
@@ -338,6 +340,7 @@ main {
     }
     .project-container {
       overflow: visible;
+      width: 94vw;
     }
     .stack-container {
       background-color: #101010;
@@ -358,9 +361,8 @@ main {
     }
   }
 }
-
 @media (orientation: landscape) {
-  @media only screen and (max-width: 1900px) {
+  @media only screen and (max-width: 1600px) {
     .hero-title {
       font-size: 2rem;
       letter-spacing: 1rem;
@@ -375,27 +377,82 @@ main {
       font-size: 0.8rem;
       padding: 1rem;
     }
+    .about-container > p {
+      font-size: 0.7rem;
+      line-height: 1.3rem;
+      width: 50%;
+    }
   }
-  @media only screen and (max-width: 1000px) {
+
+  @media only screen and (max-width: 1300px) {
+    .about-container > img {
+      width: 10rem;
+      height: 10rem;
+      margin-left: 2vw;
+    }
+
+    .about-container > p {
+      width: 60%;
+      font-weight: 300;
+      font-size: 0.6rem;
+      line-height: 1rem;
+      text-align: center;
+      padding: 1rem 5rem 1rem 1rem;
+    }
+
+    .hero-title {
+      font-size: 1rem;
+      letter-spacing: 1rem;
+      font-weight: 300;
+      padding: 0.2rem;
+    }
+
+    .stack-container {
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 0 10%;
+      justify-content: space-evenly;
+      height: 80%;
+      width: 50vw;
+      align-items: center;
+    }
+
+    .stack-group > h2 {
+      font-size: 0.4rem;
+    }
+
+    .stack-item {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin: 0.5rem 0.2rem 0 0;
+      opacity: 30%;
+      padding: 0 0.1rem;
+      filter: grayscale(100%);
+      transition: 0.1s;
+    }
+  }
+  @media only screen and (max-width: 900px) {
     .hero-title {
       font-size: 0.8rem;
       font-weight: 500;
       letter-spacing: 0.8rem;
       margin: 0.5rem auto;
     }
+
     .about-container > img {
-      width: 5rem;
-      height: 5rem;
+      width: 20vw;
+      height: 40vh;
       margin-left: 2rem;
+      margin: 0;
     }
 
     .about-container > p {
-      width: 80%;
+      width: 60%;
       font-weight: 300;
-      font-size: 0.6rem;
+      font-size: 0.5rem;
       line-height: 1rem;
       text-align: center;
-      padding: 1rem;
+      padding: 1rem 5rem 1rem 1rem;
     }
 
     .stack-group > h2 {

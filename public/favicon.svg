@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1010 1010" style="enable-background:new 0 0 1010 1010;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:url(#SVGID_1_);}
+	.st2{display:inline;opacity:0.51;}
+	.st3{display:inline;opacity:0.29;}
+	.st4{fill:#FFFFFF;}
+	.st5{display:inline;fill:none;}
+</style>
+<g id="Layer_3_00000158722688654870735530000009810887514284975249_" class="st0">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-424.6957" y1="995" x2="585.3043" y2="995" gradientTransform="matrix(-6.123234e-17 1 1 6.123234e-17 -490 420)">
+		<stop  offset="0" style="stop-color:#272649"/>
+		<stop  offset="1" style="stop-color:#352028"/>
+	</linearGradient>
+	<polygon class="st1" points="0,1010 0,0 1010,0 1010,1010 	"/>
+</g>
+<g id="Layer_2_00000070814478932342788270000005241227313395361928_" class="st0">
+	<g class="st2">
+		<g>
+			<g>
+				<defs>
+					<polygon id="SVGID_00000057116943753599558580000017226373615187838611_" points="-134.7,877.4 507.4,1519.5 1157.9,869 
+						808.6,519.7 1170.5,157.7 505.4,-507.3 -159.5,157.6 190,507.2 					"/>
+				</defs>
+				<clipPath id="SVGID_00000057114742621634970500000013487203658675251619_">
+					<use xlink:href="#SVGID_00000057116943753599558580000017226373615187838611_"  style="overflow:visible;"/>
+				</clipPath>
+			</g>
+		</g>
+	</g>
+	<g class="st3">
+		<g>
+			<g>
+				<defs>
+					<polygon id="SVGID_00000121257403463643465540000016949246521826385583_" points="284.8,126.3 -96.1,507.2 289.7,893.1 
+						496.9,685.9 711.6,900.5 1106.1,506 711.7,111.6 504.3,318.9 					"/>
+				</defs>
+				<clipPath id="SVGID_00000040556643376824522660000014172800177404714117_">
+					<use xlink:href="#SVGID_00000121257403463643465540000016949246521826385583_"  style="overflow:visible;"/>
+				</clipPath>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1_00000124873878216793152800000000947349132298055317_">
+	<g id="Layer_3">
+		<polygon class="st4" points="332.4,276.5 102.4,506.5 330.8,735 504.3,561.6 676.1,733.4 732,677.4 559.3,504.7 733.6,330.3 
+			678.3,275 330.8,622.6 214.2,506.1 388.2,332.1 		"/>
+	</g>
+	<g id="Layer_4">
+		<polygon class="st4" points="691.6,607.3 748,663.7 907.6,504.1 748,344.5 692.1,400.5 796,504.3 		"/>
+	</g>
+</g>
+<g id="Layer_4_00000003070388582970149510000005889067163999745434_" class="st0">
+	<rect class="st5" width="1013.5" height="1013.5"/>
+</g>
+</svg>
