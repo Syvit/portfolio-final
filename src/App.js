@@ -55,13 +55,15 @@ function ProjectContainer() {
   return (
     <aside className="project-container">
       <Project
-        link="https://syvit.github.io/rock-paper-scissors/"
+        link="https://nat-website.pages.dev/"
         path={`${process.env.PUBLIC_URL}/assets/images/NAT-website.png`}
       />
       <Project
+        link="collintrumpler.com"
         path={`${process.env.PUBLIC_URL}/assets/images/portfolio-ss.png`}
       />
       <Project
+        link="https://collintrumpler.github.io/admin-dashboard/"
         path={`${process.env.PUBLIC_URL}/assets/images/placeholder.png`}
       />
     </aside>

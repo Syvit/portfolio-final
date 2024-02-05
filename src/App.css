@@ -260,6 +260,7 @@ main {
   margin: 0 0 0 35%;
   justify-content: space-evenly;
   height: 80%;
+  width: 20vw;
 }
 
 .stack-group {
@@ -291,6 +292,13 @@ main {
 }
 
 @media (orientation: portrait) {
+  #contact {
+    left: 3vw;
+  }
+
+  #contact > img {
+    width: 0.8rem;
+  }
   .hero-title {
     font-size: 5vw;
     font-weight: 300;
@@ -345,6 +353,7 @@ main {
     margin: 0;
     text-align: center;
     height: 100%;
+    width: 100vw;
   }
   .stack-group > h2 {
     text-align: center;
