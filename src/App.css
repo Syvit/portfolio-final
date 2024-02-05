@@ -128,7 +128,8 @@ table {
 :root {
   color: white;
   --background: #ffffff;
-  --main-background: ;
+  --link-color: #ffffff3e;
+  --btn-color: #03060e;
   font-size: 24px;
   font-family: "IBM Plex Sans Devanagari", sans-serif;
 }
@@ -136,6 +137,26 @@ table {
 main {
   background-color: var(--background);
   height: 100vh;
+}
+
+#contact {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  text-decoration: none;
+}
+
+#contact > img {
+  filter: invert();
+  opacity: 0.5;
+  mix-blend-mode: exclusion;
+  background-color: none;
+  transition: 0.2s;
+  width: 1rem;
+}
+#contact > img:hover {
+  opacity: 1;
+  scale: 1.1;
 }
 
 .element-container {
@@ -270,21 +291,84 @@ main {
 }
 
 @media (orientation: portrait) {
-  @media only screen and (max-width: 1740px) {
-    /* For Laptops: */
-    .hero-title {
-      font-size: 2rem;
-      letter-spacing: 1rem;
-    }
-
-    .about-container > p {
-      font-size: 0.8em;
-    }
+  .hero-title {
+    font-size: 5vw;
+    font-weight: 300;
   }
-  @media only screen and (max-width: 768px) {
+  .hero-background {
+    background: #000000;
+    background: linear-gradient(170deg, #fffff0 0%, #f3f0db 80%, #00d4ff00 80%);
+    width: 100%;
+    height: 120vw;
+    top: 0;
+  }
+
+  .overlay {
+    background: #000000;
+    mask-image: linear-gradient(
+      170deg,
+      rgb(0, 0, 0) 0%,
+      rgb(0, 0, 0) 80%,
+      rgba(165, 165, 165, 0) 80%
+    );
+    width: 100%;
+    height: 120vw;
+  }
+
+  .about-container > img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .about-container > p {
+    width: 60vw;
+    line-height: 3vh;
+    font-weight: 300;
+    font-size: 1.8vw;
+    text-align: center;
+  }
+
+  .element-container {
+    grid-template: 20vw 40vw 30vw 1fr/ 1fr;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "info info"
+      "proj proj";
+    height: 100%;
+    width: 100%;
+  }
+  .project-container {
+    overflow: visible;
+    width: 94vw;
+  }
+  .stack-container {
+    margin: 0;
+    text-align: center;
+    height: 100%;
+  }
+  .stack-group > h2 {
+    text-align: center;
+    font-size: 1.5vw;
+  }
+
+  .stack-item {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .project {
+    filter: brightness(100%);
+    filter: grayscale(0);
+  }
+
+  .project:hover {
+    scale: 1;
+  }
+
+  @media only screen and (max-width: 850px) {
     /* For Phones: */
     .hero-title {
-      font-size: 1rem;
+      /* font-size: 1rem; */
       letter-spacing: 0.4rem;
       font-weight: 400;
     }
@@ -296,7 +380,8 @@ main {
         #f3f0db 100%,
         #00d4ff00 100%
       );
-      width: 100%;
+      width: 100vw;
+      height: 100%;
       top: 0;
     }
 
@@ -308,17 +393,19 @@ main {
         rgb(0, 0, 0) 100%,
         rgba(165, 165, 165, 0) 100%
       );
+      width: 100vw;
+      height: 100%;
     }
 
     .about-container > img {
-      width: 10rem;
-      height: 10rem;
+      width: 40vw;
+      height: 40vw;
     }
     .about-container > p {
-      width: 80%;
-      line-height: 1.7rem;
+      width: 80vw;
+      line-height: 5vw;
       font-weight: 300;
-      font-size: 0.8rem;
+      font-size: 2.5vw;
       text-align: center;
     }
 
@@ -328,10 +415,9 @@ main {
 
     .element-container {
       display: grid;
-      grid-template: 10% 20% 70% 70% 1fr/ 1fr;
+      grid-template: 15vw 80vw 30vw 1fr/ 1fr;
       grid-template-areas:
         "title"
-        "about"
         "about"
         "info"
         "proj";
@@ -343,13 +429,19 @@ main {
       width: 94vw;
     }
     .stack-container {
-      background-color: #101010;
+      background-color: none;
       margin: 0;
       text-align: center;
       height: 100%;
     }
+
+    .stack-item {
+      width: 5vw;
+      height: 5vw;
+    }
     .stack-group > h2 {
       text-align: center;
+      font-size: 2vw;
     }
     .project {
       filter: brightness(100%);
@@ -431,6 +523,7 @@ main {
       transition: 0.1s;
     }
   }
+
   @media only screen and (max-width: 900px) {
     .hero-title {
       font-size: 0.8rem;

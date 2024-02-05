@@ -17,6 +17,17 @@ function App() {
         <ProjectContainer />
         <StackContainer />
       </div>
+      <a
+        id="contact"
+        href="https://linktr.ee/collintrumpler"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/link.png`}
+          alt="link"
+        />
+      </a>
     </main>
   );
 }
@@ -28,6 +39,7 @@ function About() {
         src={`${process.env.PUBLIC_URL}/assets/images/self-portrait.png`}
         alt="self portrait"
       />
+
       <p>
         Hello! I'm Collin, a detail-oriented web developer passionate about
         turning creative ideas into interactive websites. I specialize in
