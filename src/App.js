@@ -62,10 +62,12 @@ function ProjectContainer() {
         link="collintrumpler.com"
         path={`${process.env.PUBLIC_URL}/assets/images/portfolio-ss.png`}
       />
-      <Project
+      {/* <Project
         link="https://collintrumpler.github.io/admin-dashboard/"
         path={`${process.env.PUBLIC_URL}/assets/images/placeholder.png`}
-      />
+      /> */}
+      <ProjectPlaceholder />
+      <ProjectPlaceholder />
     </aside>
   );
 }
@@ -78,6 +80,14 @@ function Project({ path, link }) {
         style={{ backgroundImage: `url(${path})` }}
       ></div>
     </a>
+  );
+}
+
+function ProjectPlaceholder() {
+  return (
+    <div className="project placeholder">
+      <h2>PLACEHOLDER</h2>
+    </div>
   );
 }
 
