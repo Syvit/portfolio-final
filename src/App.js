@@ -59,15 +59,15 @@ function ProjectContainer() {
         path={`${process.env.PUBLIC_URL}/assets/images/NAT-website.png`}
       />
       <Project
+        link="https://expense-tracker-bf4b3.web.app/"
+        path={`${process.env.PUBLIC_URL}/assets/images/expense-tracker.png`}
+      />
+      <Project
         link="collintrumpler.com"
         path={`${process.env.PUBLIC_URL}/assets/images/portfolio-ss.png`}
       />
-      {/* <Project
-        link="https://collintrumpler.github.io/admin-dashboard/"
-        path={`${process.env.PUBLIC_URL}/assets/images/placeholder.png`}
-      /> */}
-      <ProjectPlaceholder />
-      <ProjectPlaceholder />
+      {/* <ProjectPlaceholder />
+      <ProjectPlaceholder /> */}
     </aside>
   );
 }
