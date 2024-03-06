@@ -66,8 +66,6 @@ function ProjectContainer() {
         link="collintrumpler.com"
         path={`${process.env.PUBLIC_URL}/assets/images/portfolio-ss.png`}
       />
-      {/* <ProjectPlaceholder />
-      <ProjectPlaceholder /> */}
     </aside>
   );
 }
@@ -83,13 +81,13 @@ function Project({ path, link }) {
   );
 }
 
-function ProjectPlaceholder() {
-  return (
-    <div className="project placeholder">
-      <h2>PLACEHOLDER</h2>
-    </div>
-  );
-}
+// function ProjectPlaceholder() {
+//   return (
+//     <div className="project placeholder">
+//       <h2>PLACEHOLDER</h2>
+//     </div>
+//   );
+// }
 
 function StackContainer() {
   return (
