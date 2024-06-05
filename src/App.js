@@ -55,16 +55,16 @@ function ProjectContainer() {
   return (
     <aside className="project-container">
       <Project
+        link="https://linktr.ee/collintrumpler"
+        path={`${process.env.PUBLIC_URL}/assets/images/social-links.png`}
+      />
+      <Project
         link="https://nat-website.pages.dev/"
         path={`${process.env.PUBLIC_URL}/assets/images/NAT-website.png`}
       />
       <Project
         link="https://expense-tracker-bf4b3.web.app/"
         path={`${process.env.PUBLIC_URL}/assets/images/expense-tracker.png`}
-      />
-      <Project
-        link="collintrumpler.com"
-        path={`${process.env.PUBLIC_URL}/assets/images/portfolio-ss.png`}
       />
     </aside>
   );
